@@ -3,6 +3,10 @@
 
 /** ─── Classes Customizadas ────────────────────────────────────────────────────────────────────────── */
 
+/* fonts */
+.cfs-tiny {
+    font-size: 0.7rem;
+}
 
 /** ─── Estilos Globais ────────────────────────────────────────────────────────────────────────── */
 
@@ -34,7 +38,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    text-align: center;
 }
 
 /** ─── Componentes ────────────────────────────────────────────────────────────────────────── */
@@ -43,5 +46,15 @@ footer {
 
 /* navbar-link-custom-1 */
 .nav-link-1:hover { /*hover*/
+    text-decoration: underline;
+}
+
+.link-1 {
+    transition: 0.1s;
+    text-decoration: none;
+    margin: 0.2rem 0;
+}
+.link-1:hover { /*hover*/
+    color: white !important;
     text-decoration: underline;
 }
