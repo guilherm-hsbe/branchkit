@@ -8,6 +8,12 @@
     font-size: 0.7rem;
 }
 
+/* layout */
+.align-end {
+    display: flex;
+    justify-content: end;
+}
+
 /** ─── Estilos Globais ────────────────────────────────────────────────────────────────────────── */
 
 * {
@@ -58,4 +64,12 @@ footer {
 .link-1:hover { /*hover*/
     color: white !important;
     text-decoration: underline;
+}
+
+/** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 991px) {
+    #navTitle {
+        display: none;
+    }
 }
