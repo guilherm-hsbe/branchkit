@@ -53,7 +53,56 @@
 
     <!--! conteudo -->
     <main>
-        
+        <!-- Modal-Licença -->
+        <div class="modal fade" id="modalLicense" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header pb-1">
+                        <h5 class="modal-title" id="modalLabel">Licença MIT</h5>
+                        <button type="button" class="fa-solid fa-xmark bg-transparent border-0" 
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body cfs-tiny">
+                        <p>Direitos autorais &copy; 2023 Guilherme Henrique</p>
+                        
+                        <p>
+                            Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de
+                            documentação
+                            associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar,
+                            copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e permitir às pessoas
+                            a
+                            quem o Software é fornecido que o façam, sujeitas às seguintes condições:
+                        </p>
+                        
+                        <p>
+                            O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes
+                            substanciais do Software.
+                        </p>
+                        
+                        <p class="fw-semibold mb-1">Termos Adicionais:</p>
+                        <ol>
+                            <li class="mb-2">
+                                <b>Uso para Fins Educacionais e Não Comerciais:</b> Você pode usar este software para fins educacionais e não
+                                comerciais. O
+                                software é fornecido como ferramenta experimental para recursos de segurança e criptografia, assim como aborda
+                                tema de
+                                segurança em artigos.
+                            </li>
+                        
+                            <li>
+                                <b>Isenção de Responsabilidade:</b> Em nenhum caso o autor ou detentor dos direitos autorais será responsável
+                                por quaisquer
+                                reclamações, danos ou outras responsabilidades, seja em ação contratual, delitual ou de outra forma,
+                                decorrentes, fora
+                                de ou em conexão com o software ou o uso ou outras transações no software.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--! footer -->
@@ -70,7 +119,8 @@
 
             <div class="col-4">
                 <p class="fw-semibold mb-2">Legal</p>
-                <a href="https://github.com/guilherm-hsbe/BranchKit/blob/main/LICENSE" draggable="false" target="_blank" class="link-1">Licença MIT</a>
+                <a type="button" draggable="false" class="link-1" 
+                    data-bs-toggle="modal" data-bs-target="#modalLicense">Licença MIT</a>
             </div>
         </div>
 

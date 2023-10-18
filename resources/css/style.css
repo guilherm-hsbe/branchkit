@@ -7,6 +7,9 @@
 .cfs-tiny {
     font-size: 0.7rem;
 }
+.cfs-semimedium {
+    font-size: 0.8rem;
+}
 
 /* layout */
 .align-end {
@@ -47,6 +50,17 @@ footer {
 }
 
 /** ─── Componentes ────────────────────────────────────────────────────────────────────────── */
+
+/*? ─── Modal ───────────────────────────────────── */
+
+/* bootstrap-modal */
+.modal-header {
+    border: none !important;
+}
+.modal-content {
+    background-color: #151515 !important;
+    border-radius: 0.3rem !important;
+}
 
 /*? ─── Links ───────────────────────────────────── */
 
