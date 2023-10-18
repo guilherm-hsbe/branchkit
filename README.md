@@ -55,7 +55,7 @@ Você pode contribuir com este projeto seguindo as seguintes diretrizes:
 -->
 
 ## Licença
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](https://github.com/guilherm-hsbe/BranchKit/blob/main/LICENSE) para obter mais detalhes.
 
 <!--
 > Você é incentivado a colaborar e contribuir para o desenvolvimento deste projeto[...] <br>
