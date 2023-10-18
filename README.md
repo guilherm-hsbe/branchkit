@@ -27,7 +27,7 @@ cd Branch-Kit
 ```
 
 ## Utilização
-Para utilizar os recursos desenvolvidos neste projeto, basta seguir o link do deploy: `[ainda não há um link funcional de deploy]`
+Para utilizar os recursos desenvolvidos neste projeto, basta seguir o link do deploy: https://guilherm-hsbe.github.io/BranchKit/
 
 ## Funcionalidades
 As funcionalidades principais incluem: `[o projeto ainda não possui funcionalidades concretamente estabelecidas ou desenvolvidas]`
