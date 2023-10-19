@@ -108,6 +108,28 @@ footer {
     color: #b78e13 !important;
 }
 
+/* button-custom-2 */
+.btn-2 {
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    border: 2px solid aliceblue;
+}
+.btn-2, .btn-2 * {
+    color: aliceblue !important;
+    transition: 0.3s;
+}
+.btn-2:hover { /*hover*/
+    border-color: #ba8f22;
+}
+.btn-2:hover i { /*hover*/
+    transform: translateX(5px);
+}
+.btn-2:active, .btn-2:active i { /*active*/
+    color: #ffd700 !important;
+}
+
 /*? ─── Links ───────────────────────────────────── */
 
 /* navbar-link-custom-1 */
