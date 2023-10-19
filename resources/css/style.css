@@ -40,7 +40,7 @@ body {
 
 main {
     flex: 1;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
 footer {
@@ -60,6 +60,7 @@ footer {
 .modal-content {
     background-color: #151515 !important;
     border-radius: 0.3rem !important;
+    padding: 0.2em;
 }
 
 /*? ─── Links ───────────────────────────────────── */
@@ -86,4 +87,17 @@ footer {
     #navTitle {
         display: none;
     }
+}
+
+
+
+
+
+#randomText {
+    transition: opacity 0.5s ease-in-out;
+    font-size: 120px;
+    background-color: black;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 2rem;
 }
