@@ -1,7 +1,15 @@
 /** ─── Propriedades Customizadas ────────────────────────────────────────────────────────────────────────── */
 
+:root {
+    --cbc-black: #060606;
+}
 
 /** ─── Classes Customizadas ────────────────────────────────────────────────────────────────────────── */
+
+/* colors-background */
+.cbc-black {
+    background-color: var(--cbc-black);
+}
 
 /* fonts */
 .cfs-tiny {
@@ -93,7 +101,7 @@ footer {
 .btn-1:hover { /*hover*/
     box-shadow: 0 40px 80px rgba(255, 255, 255, 0.1);
 }
-.btn-1 i:hover { /*hover*/
+.btn-1:hover i { /*hover*/
     transform: translateY(5px);
 }
 .btn-1:active, .btn-1:active * { /*active*/
@@ -116,6 +124,13 @@ footer {
 .link-1:hover { /*hover*/
     color: white !important;
     text-decoration: underline;
+}
+
+/*? ─── HRs ───────────────────────────────────── */
+
+.separator {
+    border: none;
+    margin: 6rem 0;
 }
 
 /** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
