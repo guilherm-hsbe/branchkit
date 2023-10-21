@@ -17,11 +17,11 @@
 Plataforma de um conjunto diversificado de ferramentas e recursos relacionados à segurança, geração de códigos e outros elementos.
 
 ## Dependências
-
 Neste projeto, são utilizadas algumas bibliotecas e recursos de terceiros para melhorar o design e a funcionalidade do site. Abaixo estão as principais dependências:
 
 - [Bootstrap](https://getbootstrap.com/): Utilizado para o estilo responsivo do site.
 - [Font Awesome](https://fontawesome.com/): Fornece uma coleção de ícones de alta qualidade usados na interface.
+- [SVG Repo](https://www.svgrepo.com/): Fornece uma coleção variada de ícones usados na interface.
 - [Product & Project Managers Illustrations](https://www.drawkit.com/illustrations/product-project-managers-illustrations): Conjunto de SVGs gratuítos da [DrawKit](https://www.drawkit.com/) para determinados elementos do site.
 
 ## Instalação
