@@ -87,6 +87,7 @@ footer {
 
 /* button-custom-1 */
 .btn-1 {
+    height: 95px;
     width: 430px;
     font-size: 45px;
     background-color: white;
@@ -94,10 +95,14 @@ footer {
     padding: 1rem;
     border-radius: 2rem;
     font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .btn-1, .btn-1 * {
     color: #26241f !important;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 .btn-1:hover { /*hover*/
     box-shadow: 0 40px 80px rgba(255, 255, 255, 0.1);
