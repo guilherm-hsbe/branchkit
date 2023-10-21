@@ -92,6 +92,7 @@ footer {
 /* ________________________________
  * button-custom-large-glowing-link */
 .btn-1 {
+    height: 95px;
     width: 430px;
     font-size: 45px;
     background-color: white;
@@ -102,10 +103,15 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .btn-1, .btn-1 * {
     color: #26241f !important;
-    transition: 0.3s cubic-bezier(.18,.89,.32,1.28);
+    transition: transform 0.3s cubic-bezier(.18,.89,.32,1.28), box-shadow 0.3s cubic-bezier(.22,.61,.36,1);
+    justify-content: space-between;
 }
 .btn-1:hover { /*hover*/
     box-shadow: 0 40px 80px rgba(255, 255, 255, 0.1);
