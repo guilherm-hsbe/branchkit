@@ -25,14 +25,14 @@ Neste projeto, são utilizadas algumas bibliotecas e recursos de terceiros para 
 - [Product & Project Managers Illustrations](https://www.drawkit.com/illustrations/product-project-managers-illustrations): Conjunto de SVGs gratuítos da [DrawKit](https://www.drawkit.com/) para determinados elementos do site.
 
 ## Instalação
-Você pode baixar este repositório diretamente por [este link](https://github.com/guilherm-hsbe/Branch-Kit/archive/refs/heads/main.zip) e em seguida descompactá-lo. Opcionalmente, se possuir o [git](https://git-scm.com/downloads) instalado em sua máquina/dispositivo, você pode clonar o respositório através do terminal. Siga o passo-a-passo:
+Você pode baixar este repositório diretamente por [este link](https://github.com/guilherm-hsbe/BranchKit/archive/refs/heads/main.zip) e em seguida descompactá-lo. Opcionalmente, se possuir o [git](https://git-scm.com/downloads) instalado em sua máquina/dispositivo, você pode clonar o respositório através do terminal. Siga o passo-a-passo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/guilherm-hsbe/Branch-Kit
+git clone https://github.com/guilherm-hsbe/BranchKit
 
 # Acesse o diretório do projeto
-cd Branch-Kit
+cd BranchKit
 ```
 
 ## Utilização
