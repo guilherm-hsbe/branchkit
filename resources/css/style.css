@@ -6,12 +6,14 @@
 
 /** ─── Classes Customizadas ────────────────────────────────────────────────────────────────────────── */
 
-/* colors-background */
+/* _________________
+ * colors-background */
 .cbc-black {
     background-color: var(--cbc-black);
 }
 
-/* fonts */
+/* _____
+ * fonts */
 .cfs-tiny {
     font-size: 0.7rem;
 }
@@ -19,7 +21,8 @@
     font-size: 0.8rem;
 }
 
-/* layout */
+/* ______
+ * layout */
 .align-end {
     display: flex;
     justify-content: end;
@@ -73,7 +76,8 @@ footer {
 
 /*? ─── Modal ───────────────────────────────────── */
 
-/* bootstrap-modal */
+/* _______________
+ * bootstrap-modal */
 .modal-header {
     border: none !important;
 }
@@ -85,7 +89,8 @@ footer {
 
 /*? ─── Buttons ───────────────────────────────────── */
 
-/* button-custom-1 */
+/* _______________________________
+ * button-custom-opaque-arrow-gold */
 .btn-1 {
     height: 95px;
     width: 430px;
@@ -114,7 +119,8 @@ footer {
     color: #b78e13 !important;
 }
 
-/* button-custom-2 */
+/* ________________________________
+ * button-custom-large-glowing-link */
 .btn-2 {
     background-color: transparent;
     padding: 0.5rem;
@@ -137,7 +143,8 @@ footer {
     color: #ffd700 !important;
 }
 
-/* button-custom-3 */
+/* ______________________
+ * button-custom-bee-gold */
 .btn-3 {
     background-color: #ffe779;
     border: none;
@@ -151,16 +158,17 @@ footer {
     color: #1a1c20 !important;
     transition: 0.1s ease;
 }
-.btn-3:hover, .btn-3:hover i {
+.btn-3:hover, .btn-3:hover i { /*hover*/
     color: #47958b !important;
 }
-.btn-3:active {
+.btn-3:active { /*active*/
     box-shadow: none;
     transform: translateY(5px);
 }
 
-/* button-custom-4 */
-.btn-4 {
+/* ___________________________
+ * button-custom-listlink-gold */
+.btn-5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,12 +195,14 @@ footer {
 
 /*? ─── Links ───────────────────────────────────── */
 
-/* navbar-link-custom-1 */
+/* ____________________
+ * navbar-link-custom-1 */
 .nav-link-1:hover { /*hover*/
     text-decoration: underline;
 }
 
-/* custom-link-1 */
+/* _____________
+ * custom-link-1 */
 .link-1 {
     transition: 0.1s;
     text-decoration: none;
