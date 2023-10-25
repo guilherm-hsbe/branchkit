@@ -2,6 +2,7 @@
 
 ## Índice
 1. [Visão Geral](#visão-geral)
+1. [Dependências](#dependências)
 1. [Instalação](#instalação)
 1. [Utilização](#utilização)
 1. [Funcionalidades](#funcionalidades)
@@ -15,15 +16,23 @@
 ## Visão Geral
 Plataforma de um conjunto diversificado de ferramentas e recursos relacionados à segurança, geração de códigos e outros elementos.
 
+## Dependências
+Neste projeto, são utilizadas algumas bibliotecas e recursos de terceiros para melhorar o design e a funcionalidade do site. Abaixo estão as principais dependências:
+
+- [Bootstrap](https://getbootstrap.com/): Utilizado para o estilo responsivo do site.
+- [Font Awesome](https://fontawesome.com/): Fornece uma coleção de ícones de alta qualidade usados na interface.
+- [SVG Repo](https://www.svgrepo.com/): Fornece uma coleção variada de ícones usados na interface.
+- [Product & Project Managers Illustrations](https://www.drawkit.com/illustrations/product-project-managers-illustrations): Conjunto de SVGs gratuítos da [DrawKit](https://www.drawkit.com/) para determinados elementos do site.
+
 ## Instalação
-Você pode baixar este repositório diretamente por [este link](https://github.com/guilherm-hsbe/Branch-Kit/archive/refs/heads/main.zip) e em seguida descompactá-lo. Opcionalmente, se possuir o [git](https://git-scm.com/downloads) instalado em sua máquina/dispositivo, você pode clonar o respositório através do terminal. Siga o passo-a-passo:
+Você pode baixar este repositório diretamente por [este link](https://github.com/guilherm-hsbe/BranchKit/archive/refs/heads/main.zip) e em seguida descompactá-lo. Opcionalmente, se possuir o [git](https://git-scm.com/downloads) instalado em sua máquina/dispositivo, você pode clonar o respositório através do terminal. Siga o passo-a-passo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/guilherm-hsbe/Branch-Kit
+git clone https://github.com/guilherm-hsbe/BranchKit
 
 # Acesse o diretório do projeto
-cd Branch-Kit
+cd BranchKit
 ```
 
 ## Utilização
