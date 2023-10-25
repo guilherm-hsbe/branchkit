@@ -183,13 +183,13 @@ footer {
     padding-left: 0.8rem;
     font-weight: 600;
 }
-.btn-4, .btn-4 i {
+.btn-5, .btn-5 i {
     transition: 0.2s;
 }
-.btn-4:hover { /*hover*/
+.btn-5:hover { /*hover*/
     border: 2px solid #f8ab5d;
 }
-.btn-4:hover i { /*hover*/
+.btn-5:hover i { /*hover*/
     transform: translateX(5px);
 }
 
@@ -218,6 +218,10 @@ footer {
 .separator {
     border: none;
     margin: 6rem 0;
+}
+.separator-2 {
+    border: none;
+    margin: 3rem 0;
 }
 
 /** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
