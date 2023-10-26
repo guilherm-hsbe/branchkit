@@ -176,20 +176,20 @@ footer {
     text-align: start;
     margin: 0.4rem 0;
     padding: 0.3rem 1rem 0.3rem 0.3rem;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     background-color: transparent;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     padding-left: 0.8rem;
     font-weight: 600;
 }
 .btn-5, .btn-5 i {
-    transition: 0.2s ease;
+    transition: 0.1s ease, background-color 30ms;
 }
 .btn-5:hover { /*hover*/
-    border-color: #f8ab5d;
+    background-color: #1e1b18;
 }
-.btn-5:hover i { /*hover*/
-    transform: translateX(5px);
+.btn-5:active { /*active*/
+    background-color: #2f2a26;
 }
 
 /*? ─── Links ───────────────────────────────────── */
