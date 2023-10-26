@@ -6,12 +6,14 @@
 
 /** ─── Classes Customizadas ────────────────────────────────────────────────────────────────────────── */
 
-/* colors-background */
+/* _________________
+ * colors-background */
 .cbc-black {
     background-color: var(--cbc-black);
 }
 
-/* fonts */
+/* _____
+ * fonts */
 .cfs-tiny {
     font-size: 0.7rem;
 }
@@ -19,7 +21,8 @@
     font-size: 0.8rem;
 }
 
-/* layout */
+/* ______
+ * layout */
 .align-end {
     display: flex;
     justify-content: end;
@@ -73,7 +76,8 @@ footer {
 
 /*? ─── Modal ───────────────────────────────────── */
 
-/* bootstrap-modal */
+/* _______________
+ * bootstrap-modal */
 .modal-header {
     border: none !important;
 }
@@ -85,7 +89,8 @@ footer {
 
 /*? ─── Buttons ───────────────────────────────────── */
 
-/* button-custom-1 */
+/* ________________________________
+ * button-custom-large-glowing-link */
 .btn-1 {
     width: 430px;
     font-size: 45px;
@@ -94,10 +99,13 @@ footer {
     padding: 1rem;
     border-radius: 2rem;
     font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 .btn-1, .btn-1 * {
     color: #26241f !important;
-    transition: transform 0.3s ease;
+    transition: 0.3s cubic-bezier(.18,.89,.32,1.28);
 }
 .btn-1:hover { /*hover*/
     box-shadow: 0 40px 80px rgba(255, 255, 255, 0.1);
@@ -109,37 +117,91 @@ footer {
     color: #b78e13 !important;
 }
 
-/* button-custom-2 */
+/* _______________________________
+ * button-custom-opaque-arrow-gold */
 .btn-2 {
     background-color: transparent;
     padding: 0.5rem;
     border-radius: 1rem;
     font-weight: bold;
     border: 2px solid aliceblue;
+    display: flex;
+    align-items: center;
 }
 .btn-2, .btn-2 * {
     color: aliceblue !important;
-    transition: transform 0.3s ease;
+    transition: 0.3s cubic-bezier(.17,.84,.44,1);
 }
 .btn-2:hover { /*hover*/
     border-color: #ba8f22;
 }
 .btn-2:hover i { /*hover*/
     transform: translateX(5px);
-    transition: transform 0.3s ease;
 }
 .btn-2:active, .btn-2:active i { /*active*/
     color: #ffd700 !important;
 }
 
+/* ______________________
+ * button-custom-bee-gold */
+.btn-3 {
+    background-color: #ffe779;
+    border: none;
+    box-shadow: 0 5px 0 #f8ab5d;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    width: 200px;
+}
+.btn-3, .btn-3 i {
+    color: #1a1c20 !important;
+    transition: 0.1s ease;
+}
+.btn-3:hover, .btn-3:hover i { /*hover*/
+    color: #47958b !important;
+}
+.btn-3:active { /*active*/
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* ___________________________
+ * button-custom-listlink-gold */
+.btn-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 450px;
+    text-align: start;
+    margin: 0.4rem 0;
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
+    border-radius: 0.7rem;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding-left: 0.8rem;
+    font-weight: 600;
+}
+.btn-5, .btn-5 i {
+    transition: 0.1s ease, background-color 30ms;
+}
+.btn-5:hover { /*hover*/
+    background-color: #1e1b18;
+}
+.btn-5:active { /*active*/
+    background-color: #2f2a26;
+}
+
 /*? ─── Links ───────────────────────────────────── */
 
-/* navbar-link-custom-1 */
+/* ____________________
+ * navbar-link-custom-1 */
 .nav-link-1:hover { /*hover*/
     text-decoration: underline;
 }
 
-/* custom-link-1 */
+/* _____________
+ * custom-link-1 */
 .link-1 {
     transition: 0.1s;
     text-decoration: none;
@@ -155,6 +217,10 @@ footer {
 .separator {
     border: none;
     margin: 6rem 0;
+}
+.separator-2 {
+    border: none;
+    margin: 3rem 0;
 }
 
 /** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
