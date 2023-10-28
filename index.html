@@ -84,6 +84,50 @@
         <!--? separador -->
         <hr class="separator">
 
+        <!--* conteudo-github -->
+        <section class="container mx-auto">
+            <h2 class="fw-bold text-center">
+                Repositório no GitHub
+                <i class="fa-brands fa-github-alt"></i>
+            </h2>
+
+            <div class="mx-auto w-50">
+                <p class="text-start">
+                    Este projeto é de código aberto e hospedado no GitHub. 
+                    Explore o repositório para acessar o código-fonte, 
+                    fazer clones ou contribuir para o desenvolvimento.
+                </p>
+            </div>
+
+            <div class="row text-center d-flex justify-content-center">
+                <div class="d-flex align-items-center z-1 position-relative" style="width: fit-content">
+                    <button id="clone-repo-btn" class="position-absolute button-blank icon-custom-1" style="right: 1rem;">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+
+                    <code id="clone-repo-text" class="code-custom-1">
+                        git clone https://github.com/guilherm-hsbe/BranchKit
+                    </code>
+                </div>
+
+                <a href="https://github.com/guilherm-hsbe/BranchKit/blob/main/README.md" target="_blank" class="btn-6">
+                    <i class="fa-solid fa-book"></i>
+                    Leia o README
+                </a>
+            </div>
+
+            <div class="row text-center cfs-tiny mt-3">
+                <div class="d-flex justify-content-center">
+                    <p class="me-2 mb-0">Última atualização: <span id="last-commit-date" class="fw-semibold"></span></p>
+                    <a href="https://github.com/guilherm-hsbe/BranchKit/archive/refs/heads/main.zip" class="link-blank me-2">Download</a>
+                    <a href="https://github.com/guilherm-hsbe/BranchKit" target="_blank" class="link-blank me-2">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!--? separador -->
+        <hr class="separator-2">
+
         <!--* conteudo-texto-importancia-seguranca -->
         <section class="row mx-auto cbc-black p-5">
             <div class="col d-flex justify-content-end">
