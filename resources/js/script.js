@@ -44,3 +44,39 @@ async function fetchLastCommitDate() {
     }
 }
 fetchLastCommitDate();
+
+/* FUNÇÃO ------------------------------|
+ * Copia o comando de cópia do repo e muda
+ * o ícone do botão por três segundos.
+ */
+function copyGitClone() {
+    const texto = document.getElementById("clone-repo-text");
+    const textoParaCopiar = texto.innerText;
+
+    const textarea = document.createElement("textarea");
+    textarea.value = textoParaCopiar;
+
+    document.body.appendChild(textarea);
+
+    textarea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(textarea);
+}
+
+function changeIcon() {
+    const icone = document.getElementById("clone-repo-icon");
+    icone.classList.remove("fa-regular", "fa-copy");
+    icone.classList.add("fa-solid", "fa-check");
+
+    setTimeout(function() {
+        icone.classList.remove("fa-solid", "fa-check");
+        icone.classList.add("fa-regular", "fa-copy");
+    }, 3000);
+}
+
+const botao = document.getElementById("clone-repo-btn");
+botao.addEventListener("click", function() {
+    copyGitClone();
+    changeIcon();
+});
