@@ -25,3 +25,22 @@ function updateRandomText() {
     }, 250);
 }
 updateRandomText();
+
+/* FUNÇÃO ------------------------------|
+ * Atualiza o 'last-commit-date' com a data do último commit.
+ * utiliza API do GitHub para obter as informações de commit do repo.
+ */
+const apiUrl = 'https://api.github.com/repos/guilherm-hsbe/BranchKit/commits/main';
+async function fetchLastCommitDate() {
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        const commitDate = new Date(data.commit.committer.date);
+        const formattedDate = commitDate.toLocaleDateString();
+        document.getElementById('last-commit-date').textContent = formattedDate;
+    } catch (error) {
+        console.error('(erro ao buscar o último commit:', error, ')');
+        document.getElementById('last-commit-date').textContent = '(erro ao buscar a data do último commit.)';
+    }
+}
+fetchLastCommitDate();
