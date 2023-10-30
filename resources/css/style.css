@@ -1,15 +1,35 @@
 /** ─── Propriedades Customizadas ────────────────────────────────────────────────────────────────────────── */
 
 :root {
-    --cbc-black: #060606;
+    /* Tons escuros */
+    --custom-dark-grey: #1c1c1c;
+    --custom-subtle-dark: #131312;
+    --custom-dark: #0f0f0e;
+    --custom-black: #0b0a0a;
+
+    /* Tons cinza */
+    --custom-grey: #808080;
+    --custom-subtle-blue: #252431;
+
+    /* Tons claros */
+    --custom-alice: #f0f8ff;
+    --custom-white: #ffffff;
+    --custom-subtle-white: #ddd;
+    --custom-subtle-white-lighter: #f0f0f0;
+
+    /* Tons coloridos */
+    --custom-gold: #ffe25c;
 }
 
 /** ─── Classes Customizadas ────────────────────────────────────────────────────────────────────────── */
 
 /* _________________
  * colors-background */
+.cbc-subtle-dark {
+    background-color: var(--custom-dark);
+}
 .cbc-black {
-    background-color: var(--cbc-black);
+    background-color: var(--custom-black);
 }
 
 /* _____
@@ -28,10 +48,14 @@
     justify-content: end;
 }
 
+.p-section {
+    padding: 8rem 0 5rem;
+}
+
 /** ─── Estilos Globais ────────────────────────────────────────────────────────────────────────── */
 
 * {
-    color: #f0f0f0 !important;
+    color: var(--custom-subtle-white-lighter) !important;
 }
 
 html {
@@ -45,7 +69,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #131312 !important;
+    background-color: var(--custom-subtle-dark) !important;
     font-family: 'Inter', sans-serif !important;
 }
 
@@ -67,11 +91,11 @@ footer {
 #randomText {
     transition: opacity 0.5s ease-in-out;
     font-size: 120px;
-    background-color: #000000c4;
+    background-color: var(--custom-black);
     padding: 1rem;
     border-radius: 2rem;
     width: fit-content;
-    color: #ddd !important;
+    color: var(--custom-subtle-white) !important;
 }
 
 /*? ─── Modal ───────────────────────────────────── */
@@ -82,7 +106,7 @@ footer {
     border: none !important;
 }
 .modal-content {
-    background-color: #151515 !important;
+    background-color: var(--custom-subtle-dark) !important;
     border-radius: 0.3rem !important;
     padding: 0.2em;
 }
@@ -97,135 +121,97 @@ footer {
 }
 
 /* ________________________________
- * button-custom-large-glowing-link */
-.btn-1 {
-    height: 95px;
-    width: 430px;
-    font-size: 45px;
-    background-color: white;
+ * button-large-light-glow */
+.btn-lg-light-glow {
+    background-color: var(--custom-white);
     border: none;
-    padding: 1rem;
     border-radius: 2rem;
     font-weight: bold;
+    font-size: 45px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    width: 430px;
+    height: 95px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.btn-1, .btn-1 * {
+.btn-lg-light-glow, .btn-lg-light-glow * {
     color: #26241f !important;
     transition: transform 0.3s cubic-bezier(.18,.89,.32,1.28), box-shadow 0.3s cubic-bezier(.22,.61,.36,1);
-    justify-content: space-between;
 }
-.btn-1:hover { /*hover*/
-    box-shadow: 0 40px 80px rgba(255, 255, 255, 0.1);
+.btn-lg-light-glow:hover { /*hover*/
+    box-shadow: 0 40px 80px #ffffff1a;
 }
-.btn-1:hover i { /*hover*/
+.btn-lg-light-glow:hover i { /*hover*/
     transform: translateY(5px);
-}
-.btn-1:active, .btn-1:active * { /*active*/
-    color: #b78e13 !important;
 }
 
 /* _______________________________
- * button-custom-opaque-arrow-gold */
-.btn-2 {
-    background-color: transparent;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-weight: bold;
-    border: 2px solid aliceblue;
-    display: flex;
-    align-items: center;
-}
-.btn-2, .btn-2 * {
-    color: aliceblue !important;
-    transition: 0.3s cubic-bezier(.17,.84,.44,1);
-}
-.btn-2:hover { /*hover*/
-    border-color: #ba8f22;
-}
-.btn-2:hover i { /*hover*/
-    transform: translateX(5px);
-}
-.btn-2:active, .btn-2:active i { /*active*/
-    color: #ffd700 !important;
-}
-
-/* ______________________
- * button-custom-bee-gold */
-.btn-3 {
-    background-color: #ffe779;
+ * button-light-simple */
+.btn-light-simple {
+    background-color: var(--custom-white);
     border: none;
-    box-shadow: 0 5px 0 #f8ab5d;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 0.8rem;
     font-weight: bold;
-    width: 200px;
+    width: 180px;
+    padding: 0.5rem 0;
+    transition: 0.2s ease;
 }
-.btn-3, .btn-3 i {
-    color: #1a1c20 !important;
-    transition: 0.1s ease;
+.btn-light-simple, .btn-light-simple i {
+    color: var(--custom-black) !important;
 }
-.btn-3:hover, .btn-3:hover i { /*hover*/
-    color: #47958b !important;
-}
-.btn-3:active { /*active*/
-    box-shadow: none;
-    transform: translateY(5px);
+.btn-light-simple:hover { /*hover*/
+    box-shadow: 0 10px 40px #ffffff0c;
 }
 
 /* ___________________________
- * button-custom-listlink-gold */
-.btn-5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 450px;
-    text-align: start;
-    margin: 0.4rem 0;
-    padding: 0.3rem 1rem 0.3rem 0.3rem;
-    border-radius: 0.7rem;
-    background-color: transparent;
-    border: 2px solid transparent;
-    padding-left: 0.8rem;
-    font-weight: 600;
-}
-.btn-5, .btn-5 i {
-    transition: 0.1s ease, background-color 30ms;
-}
-.btn-5:hover { /*hover*/
-    background-color: #1e1b18;
-}
-.btn-5:active { /*active*/
-    background-color: #2f2a26;
-}
-
-/* ___________________________
- * button-custom-listlink-lightgold */
-.btn-6 {
+ * button-gold-simple */
+.btn-gold-simple {
+    background-color: var(--custom-gold);
+    border: none;
+    border-radius: 0.5rem;
     font-weight: bolder;
+    text-decoration: none;
     width: fit-content !important;
     padding: 0.4rem 0.5rem !important;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: #ffe779;
-    text-decoration: none;
     cursor: pointer;
     transition: 0.1s;
 }
-.btn-6, .btn-6 * {
+.btn-gold-simple, .btn-gold-simple * {
     color: #1a1c20 !important;
 }
-.btn-6:hover {
-    background-color: #e2cb67;
+.btn-gold-simple:hover { /*hover*/
+    background-color: #e1c752;
+}
+
+/* ______________________
+ * button-3d-dark */
+.btn-dark3d {
+    background-color: var(--custom-black);
+    box-shadow: 0 5px 0 var(--custom-dark-grey), 0 15px 15px #0000004c;
+    border: 4px solid var(--custom-dark-grey);
+    border-radius: 1rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 0.5rem;
+}
+.btn-dark3d {
+    color: var(--custom-subtle-white) !important;
+    transition: 0.2s ease;
+}
+.btn-dark3d:active { /*active*/
+    box-shadow: 0 5px 0 var(--custom-dark-grey);
+    transform: translateY(5px);
 }
 
 /*? ─── Links ───────────────────────────────────── */
+
+/* _____________
+ * blank-link */
+.link-blank:hover {
+    color: var(--custom-white) !important;
+}
 
 /* ____________________
  * navbar-link-custom-1 */
@@ -234,24 +220,43 @@ footer {
 }
 
 /* _____________
- * blank-link */
-.link-blank:hover {
-    color: white !important;
-}
-
-/* _____________
- * custom-link-1 */
-.link-1 {
+ * custom-simple */
+.link-simple {
     transition: 0.1s;
     text-decoration: none;
     margin: 0.2rem 0;
 }
-.link-1:hover { /*hover*/
-    color: white !important;
+.link-simple:hover { /*hover*/
+    color: var(--custom-white) !important;
     text-decoration: underline;
 }
 
+/* ___________________________
+ * link-list */
+.link-list {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    text-align: start;
+    width: 450px;
+    margin: 0.4rem 0;
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
+    padding-left: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 50ms;
+}
+.link-list:hover { /*hover*/
+    background-color: var(--custom-dark);
+}
+
 /*? ─── HRs ───────────────────────────────────── */
+
+.separator-dots {
+    border: 2px dashed var(--custom-grey);
+}
 
 .separator {
     border: none;
@@ -268,7 +273,7 @@ footer {
     display: flex;
     align-items: center;
     height: 50px;
-    background-color: #252431;
+    background-color: var(--custom-subtle-blue);
     border-radius: 0.3rem;
     padding: 0.5rem 1.9rem 0.5rem 0.5rem;
     font-family: 'Source Code Pro', monospace;
@@ -283,8 +288,14 @@ footer {
 .icon-custom-1 i {
     transition: 30ms;
 }
-.icon-custom-1:hover i {
+.icon-custom-1:hover i { /*hover*/
     color: #ffd44d !important;
+}
+
+/*? ─── Images ───────────────────────────────────── */
+
+.img-tilt {
+    transform: rotate(5deg);
 }
 
 /** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
