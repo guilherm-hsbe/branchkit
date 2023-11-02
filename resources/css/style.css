@@ -132,9 +132,6 @@ footer {
     width: 430px;
     height: 95px;
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .btn-lg-light-glow, .btn-lg-light-glow * {
     color: #26241f !important;
