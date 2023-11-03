@@ -210,12 +210,6 @@ footer {
     color: var(--custom-white) !important;
 }
 
-/* ____________________
- * navbar-link-custom-1 */
-.nav-link-1:hover { /*hover*/
-    text-decoration: underline;
-}
-
 /* _____________
  * custom-simple */
 .link-simple {
@@ -225,7 +219,7 @@ footer {
 }
 .link-simple:hover { /*hover*/
     color: var(--custom-white) !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 /* ___________________________
