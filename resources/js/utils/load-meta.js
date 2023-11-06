@@ -1,9 +1,3 @@
-// Icon
-var iconLink = document.createElement('link');
-iconLink.setAttribute('rel', 'icon');
-iconLink.setAttribute('href', '../resources/images/icons/fingerprint-svgrepo-com.svg');
-document.head.appendChild(iconLink);
-
 /*Fonts*/
     // GoogleAPIS
 var googleAPIS = document.createElement('link');
@@ -28,12 +22,6 @@ var fontInterStyle = document.createElement('link');
 fontInterStyle.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
 fontInterStyle.setAttribute('rel', 'stylesheet');
 document.head.appendChild(fontInterStyle);
-
-// CSS
-var cssGlobal = document.createElement('link');
-cssGlobal.setAttribute('rel', 'stylesheet');
-cssGlobal.setAttribute('href', '../resources/css/style.css');
-document.head.appendChild(cssGlobal);
 
 // Font-Awesome
 var awesIcons = document.createElement('script');
