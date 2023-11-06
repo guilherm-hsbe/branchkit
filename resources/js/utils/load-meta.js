@@ -1,7 +1,7 @@
 // Icon
 var iconLink = document.createElement('link');
 iconLink.setAttribute('rel', 'icon');
-iconLink.setAttribute('href', 'resources/images/icons/fingerprint-svgrepo-com.svg');
+iconLink.setAttribute('href', '../resources/images/icons/fingerprint-svgrepo-com.svg');
 document.head.appendChild(iconLink);
 
 /*Fonts*/
@@ -32,7 +32,7 @@ document.head.appendChild(fontInterStyle);
 // CSS
 var cssGlobal = document.createElement('link');
 cssGlobal.setAttribute('rel', 'stylesheet');
-cssGlobal.setAttribute('href', 'resources/css/style.css');
+cssGlobal.setAttribute('href', '../resources/css/style.css');
 document.head.appendChild(cssGlobal);
 
 // Font-Awesome
