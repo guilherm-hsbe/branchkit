@@ -3,7 +3,7 @@
 :root {
     /* Tons escuros */
     --custom-dark-grey: #1c1c1c;
-    --custom-subtle-dark: #131312;
+    --custom-subtle-dark: #141414;
     --custom-dark: #0f0f0e;
     --custom-black: #0b0a0a;
 
@@ -74,8 +74,9 @@ body {
 }
 
 main {
+    min-height: 100vh;
     flex: 1;
-    margin: 5rem 0;
+    margin: 5rem 0; 
 }
 
 footer {
@@ -129,8 +130,6 @@ footer {
     font-weight: bold;
     font-size: 45px;
     text-decoration: none;
-    width: 430px;
-    height: 95px;
     padding: 1rem;
 }
 .btn-lg-light-glow, .btn-lg-light-glow * {
@@ -286,7 +285,7 @@ footer {
 /*? ─── Images ───────────────────────────────────── */
 
 .img-tilt {
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 }
 
 /** ─── Responsividade ────────────────────────────────────────────────────────────────────────── */
