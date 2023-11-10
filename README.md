@@ -1,4 +1,4 @@
-# BranchKit :key: uma Plataforma Experimental de Recursos de Segurança
+# BranchKit, uma Plataforma Experimental de Recursos de Segurança
 
 ## Índice
 1. [Visão Geral](#visão-geral)
