@@ -1,0 +1,36 @@
+/** ─── Componentes ────────────────────────────────────────────────────────────────────────── */
+
+/*? ─── Buttons ───────────────────────────────────── */
+
+/* ___________________________
+ * button-gold-simple */
+.btn-remake {
+    background-color: var(--custom-gold);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    width: fit-content !important;
+    padding: 0.4rem 0.5rem !important;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.btn-remake, .btn-remake * {
+    color: #1a1c20 !important;
+}
+.btn-remake:hover { /*hover*/
+    background-color: #e1c752;
+}
+
+/*? ─── Text-Field ───────────────────────────────────── */
+
+.txt-field-custom-1 {
+    background-color: var(--custom-subtle-blue);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.9rem 0.5rem 0.5rem;
+    text-align: start;
+    font-size: 1rem;
+    cursor: pointer;
+    width:550px;
+    height: 60px;
+}
