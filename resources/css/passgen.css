@@ -31,6 +31,117 @@
     text-align: start;
     font-size: 1rem;
     cursor: pointer;
-    width:550px;
+    width: 450px;
     height: 60px;
+}
+
+/*? ─── Range ───────────────────────────────────── */
+
+/*********** Baseline, reset styles ***********/
+.range-custom-1 {
+    --webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+}
+
+/* Removes default focus */
+.range-custom-1:focus {
+    outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+.range-custom-1::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px; /*track*/
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: none;
+    background: var(--custom-subtle-blue);
+    border-radius: 50px;
+    border: none;
+}
+
+/* slider thumb */
+.range-custom-1::-webkit-slider-thumb {
+    box-shadow: none;
+    border: none;
+    height: 20px; /*thumb*/
+    width: 20px;
+    border-radius: 50px;
+    background: var(--custom-gold);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+
+.range-custom-1:focus::-webkit-slider-runnable-track {
+    background: var(--custom-subtle-blue);
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+.range-custom-1::-moz-range-track {
+    width: 100%;
+    height: 10px; /*track*/
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: none;
+    background: var(--custom-subtle-blue);
+    border-radius: 50px;
+    border: none;
+}
+
+/* slider thumb */
+.range-custom-1::-moz-range-thumb {
+    box-shadow: none;
+    border: none;
+    height: 20px; /*thumb*/
+    width: 20px;
+    border-radius: 50px;
+    background: var(--custom-gold);
+    cursor: pointer;
+}
+
+.range-custom-1::-ms-track {
+    width: 100%;
+    height: 10px; /*track*/
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.range-custom-1::-ms-fill-lower {
+    background: var(--custom-subtle-blue);
+    border: none;
+    border-radius: 100px;
+    box-shadow: none;
+}
+
+.range-custom-1::-ms-fill-upper {
+    background: var(--custom-subtle-blue);
+    border: none;
+    border-radius: 100px;
+    box-shadow: none;
+}
+
+.range-custom-1::-ms-thumb {
+    box-shadow: none;
+    border: none;
+    height: 20px; /*thumb*/
+    width: 20px;
+    border-radius: 50px;
+    background: var(--custom-gold);
+    cursor: pointer;
+}
+
+.range-custom-1:focus::-ms-fill-lower {
+    background: var(--custom-subtle-blue);
+}
+
+.range-custom-1:focus::-ms-fill-upper {
+    background: var(--custom-subtle-blue);
 }
