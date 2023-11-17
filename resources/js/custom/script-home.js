@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
     /* FUNÇÃO ------------------------------|
-    * Atualiza o texto aleatório a cada 2 segundos.
-    * Gera um texto de 4 caracteres aleatórios, incluindo letras e números,
-    * e o exibe no elemento "randomText".
-    */
+     * Atualiza o texto aleatório a cada 2 segundos.
+     * Gera um texto de 4 caracteres aleatórios, incluindo letras e números,
+     * e o exibe no elemento "randomText".
+     */
     function generateRandomText() {
         const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@@##&&";
         let randomText = "";
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function(){
     updateRandomText();
 
     /* FUNÇÃO ------------------------------|
-    * Atualiza o 'last-commit-date' com a data do último commit.
-    * utiliza API do GitHub para obter as informações de commit do repo.
-    */
+     * Atualiza o 'last-commit-date' com a data do último commit.
+     * utiliza API do GitHub para obter as informações de commit do repo.
+     */
     const apiUrl = 'https://api.github.com/repos/guilherm-hsbe/BranchKit/commits/main';
     async function fetchLastCommitDate() {
         try {
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function(){
     fetchLastCommitDate();
 
     /* FUNÇÃO ------------------------------|
-    * Copia o comando de cópia do repo e muda
-    * o ícone do botão por três segundos.
-    */
+     * Copia o comando de cópia do repo e muda
+     * o ícone do botão por três segundos.
+     */
     function copyGitClone() {
         const texto = document.getElementById("clone-repo-text");
         const textoParaCopiar = texto.innerText;
