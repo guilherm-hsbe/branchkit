@@ -1,3 +1,55 @@
+
+
+// #####################
+//? Seção DOMContentLoaded
+// #####################
+document.addEventListener('DOMContentLoaded', function() {
+    /* FUNÇÃO ------------------------------|
+     * Copia a senha gerada.
+    */
+    function copyPassWord() {
+        const passText = document.getElementById("passgen-text");
+        const passCopy = passText.innerText;
+
+        const textarea = document.createElement("textarea");
+        textarea.value = passCopy;
+
+        document.body.appendChild(textarea);
+
+        textarea.select();
+        document.execCommand("copy");
+
+        document.body.removeChild(textarea);
+    }
+
+    /* FUNÇÃO ------------------------------|
+     * Muda o ícone do botão de copiar senha
+     * quando chamada.
+     */
+    function changeIcon() {
+        const iconCopyPass = document.getElementById("copy-pass-icon");
+        iconCopyPass.classList.remove("fa-regular", "fa-copy");
+        iconCopyPass.classList.add("fa-solid", "fa-check");
+
+        setTimeout(function() {
+            iconCopyPass.classList.remove("fa-solid", "fa-check");
+            iconCopyPass.classList.add("fa-regular", "fa-copy");
+        }, 3000);
+    }
+
+    /* FUNCIONALIDADE ------------------------------|
+     * Adiciona um event listener para o evento 'click' no botão de copiar senha.
+     */
+    const btnCopyPass = document.getElementById("copy-pass-btn");
+    btnCopyPass.addEventListener("click", function() {
+        copyPassWord();
+        changeIcon();
+    });
+});
+/*END-DOMContentLoadedd*/
+
+//? |--------------------------------------------------------------------------------------------------------------------|
+
 /* FUNÇÃO ------------------------------|
  * Atualiza o valor do contador de caracteres da senha.
  */
