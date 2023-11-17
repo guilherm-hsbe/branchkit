@@ -56,10 +56,11 @@
 
 /*********** Baseline, reset styles ***********/
 .range-custom-1 {
-    --webkit-appearance: none;
-    margin: 10px 0;
-    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
     background: transparent;
+    cursor: pointer;
+    width: 100%;
 }
 
 /* Removes default focus */
@@ -70,95 +71,45 @@
 /******** Chrome, Safari, Opera and Edge Chromium styles ********/
 /* slider track */
 .range-custom-1::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 10px; /*track*/
-    cursor: pointer;
-    animate: 0.2s;
-    box-shadow: none;
-    background: var(--custom-subtle-blue);
-    border-radius: 50px;
-    border: none;
+    background-color: var(--custom-subtle-blue);
+    border-radius: 0.5rem;
+    height: 25px;
 }
 
 /* slider thumb */
 .range-custom-1::-webkit-slider-thumb {
-    box-shadow: none;
-    border: none;
-    height: 20px; /*thumb*/
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -6px; /* Centers thumb on the track */
+    background-color: var(--custom-gold);
+    border-radius: 1.5rem;
+    height: 20px;
     width: 20px;
-    border-radius: 50px;
-    background: var(--custom-gold);
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -5px;
 }
 
-.range-custom-1:focus::-webkit-slider-runnable-track {
-    background: var(--custom-subtle-blue);
+.range-custom-1:focus::-webkit-slider-thumb {
+    outline: 3px solid var(--custom-gold);
+    outline-offset: 0.125rem;
 }
 
 /*********** Firefox styles ***********/
 /* slider track */
 .range-custom-1::-moz-range-track {
-    width: 100%;
-    height: 10px; /*track*/
-    cursor: pointer;
-    animate: 0.2s;
-    box-shadow: none;
-    background: var(--custom-subtle-blue);
-    border-radius: 50px;
-    border: none;
+    background-color: var(--custom-subtle-blue);
+    border-radius: 0.5rem;
+    height: 25px;
 }
 
 /* slider thumb */
 .range-custom-1::-moz-range-thumb {
-    box-shadow: none;
-    border: none;
-    height: 20px; /*thumb*/
+    background-color: var(--custom-gold);
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 1.5rem;
+    height: 20px;
     width: 20px;
-    border-radius: 50px;
-    background: var(--custom-gold);
-    cursor: pointer;
 }
 
-.range-custom-1::-ms-track {
-    width: 100%;
-    height: 10px; /*track*/
-    cursor: pointer;
-    animate: 0.2s;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-}
-
-.range-custom-1::-ms-fill-lower {
-    background: var(--custom-subtle-blue);
-    border: none;
-    border-radius: 100px;
-    box-shadow: none;
-}
-
-.range-custom-1::-ms-fill-upper {
-    background: var(--custom-subtle-blue);
-    border: none;
-    border-radius: 100px;
-    box-shadow: none;
-}
-
-.range-custom-1::-ms-thumb {
-    box-shadow: none;
-    border: none;
-    height: 20px; /*thumb*/
-    width: 20px;
-    border-radius: 50px;
-    background: var(--custom-gold);
-    cursor: pointer;
-}
-
-.range-custom-1:focus::-ms-fill-lower {
-    background: var(--custom-subtle-blue);
-}
-
-.range-custom-1:focus::-ms-fill-upper {
-    background: var(--custom-subtle-blue);
+.range-custom-1:focus::-moz-range-thumb{
+    outline: 3px solid var(--custom-gold);
+    outline-offset: 0.125rem;
 }
