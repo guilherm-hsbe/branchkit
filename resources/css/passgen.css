@@ -22,6 +22,17 @@
     background-color: #e1c752;
 }
 
+/* ___________________________
+ * button-copy-password */
+.btn-copy-pass {
+    right: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+}
+
 /*? ─── Text-Field ───────────────────────────────────── */
 
 .txt-field-custom-1 {
@@ -33,6 +44,12 @@
     cursor: pointer;
     width: 450px;
     height: 60px;
+    border: 1px solid var(--custom-white);
+    border-bottom-width: 2px;
+}
+
+.field-copy-pass:hover .txt-field-custom-1 {
+    border-color: var(--custom-gold);
 }
 
 /*? ─── Range ───────────────────────────────────── */
