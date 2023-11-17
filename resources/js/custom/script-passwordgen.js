@@ -4,6 +4,28 @@
 //? Seção DOMContentLoaded
 // #####################
 document.addEventListener('DOMContentLoaded', function() {
+    
+    /* FUNCIONALIDADE ------------------------------|
+     * Define valor padrão para o input range da senha.
+     */
+    let passgenLengthInput = document.getElementById('passgen-length');
+    let valorPadrao = 16;
+    passgenLengthInput.value = valorPadrao;
+
+    /* FUNCIONALIDADE ------------------------------|
+     * Atualiza o valor do contador de caracteres da senha ao carregar a página.
+     */
+    updateLengthCounter(passgenLengthInput, valorPadrao);
+
+    /* FUNCIONALIDADE ------------------------------|
+     * Adiciona um event listener para o evento 'input' no seletor de caracteres da senha.
+     */
+    passgenLengthInput.addEventListener('input', function() {
+        updateLengthCounter(passgenLengthInput, valorPadrao);
+    });
+
+    //? |--------------------------------------------------------------------------------------------------------------------|
+
     /* FUNÇÃO ------------------------------|
      * Copia a senha gerada.
     */
