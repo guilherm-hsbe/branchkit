@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     */
     function copyPassWord() {
         const passText = document.getElementById("passgen-text");
-        const passCopy = passText.innerText;
+        const passCopy = passText.value
 
         const textarea = document.createElement("textarea");
         textarea.value = passCopy;
