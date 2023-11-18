@@ -80,6 +80,20 @@ function updateLengthCounter(passgenLengthInput, valorPadrao) {
     lengthCounter.textContent = passgenLengthInput.value || valorPadrao;
 }
 
+//? |--------------------------------------------------------------------------------------------------------------------|
+
+/* FUNCIONALIDADE ------------------------------|
+ * Adiciona um atalho para gerar senha (espaço).
+ */
+document.addEventListener("keydown", function (event) {
+    if (event.key === " ") {
+        generatePass();
+        event.preventDefault();
+    }
+});
+
+//? |--------------------------------------------------------------------------------------------------------------------|
+
 /* FUNÇÃO ------------------------------|
  * Gera uma senha personalizada com base nas opções selecionadas pelo usuário.
  */
