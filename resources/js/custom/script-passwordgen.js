@@ -1,89 +1,100 @@
+document.addEventListener('DOMContentLoaded', function () {
 
+  //? |- FUNCIONALIDADE DE DEFINIÇÃO E ATUALIZAÇÃO DO INPUT RANGE ---------------------------------------------------------|
 
-// #####################
-//? Seção DOMContentLoaded
-// #####################
-document.addEventListener('DOMContentLoaded', function() {
-    
-    /* FUNCIONALIDADE ------------------------------|
-     * Define valor padrão para o input range da senha.
-     */
-    let passgenLengthInput = document.getElementById('passgen-length');
-    let valorPadrao = 16;
-    passgenLengthInput.value = valorPadrao;
+  /** Define valor padrão para o input range da senha.
+   * @type {HTMLInputElement}
+   * @type {number} - O valor padrão
+   * @type {number} - A atribuíção do valor padrão ao input range
+   */
+  let passgenLengthInput = document.getElementById("passgen-length");
+  let valorPadrao = 16;
+  passgenLengthInput.value = valorPadrao;
 
-    /* FUNCIONALIDADE ------------------------------|
-     * Atualiza o valor do contador de caracteres da senha ao carregar a página.
-     */
+  /** Atualiza o valor do contador de caracteres da senha ao carregar a página.
+   * @function
+   * @param {HTMLInputElement} passgenLengthInput - O elemento de entrada de senha.
+   * @param {number} valorPadrao - O valor padrão a ser utilizado.
+   * @returns {void}
+   */
+  updateLengthCounter(passgenLengthInput, valorPadrao);
+
+  /** Adiciona um event listener para o evento 'input' no seletor de caracteres da senha.
+   * @function
+   * @returns {void}
+   */
+  passgenLengthInput.addEventListener("input", function () {
     updateLengthCounter(passgenLengthInput, valorPadrao);
+  });
 
-    /* FUNCIONALIDADE ------------------------------|
-     * Adiciona um event listener para o evento 'input' no seletor de caracteres da senha.
-     */
-    passgenLengthInput.addEventListener('input', function() {
-        updateLengthCounter(passgenLengthInput, valorPadrao);
-    });
+  //? |- FUNCIONALIDADE DE CÓPIA DA SENHA ---------------------------------------------------------|
 
-    //? |--------------------------------------------------------------------------------------------------------------------|
+  /** Copia a senha gerada.
+   * @function
+   * @returns {void}
+   */
+  function copyPassWord() {
+    const passText = document.getElementById("passgen-text");
+    const passCopy = passText.value;
+    const textarea = document.createElement("textarea");
 
-    /* FUNÇÃO ------------------------------|
-     * Copia a senha gerada.
-    */
-    function copyPassWord() {
-        const passText = document.getElementById("passgen-text");
-        const passCopy = passText.value
+    textarea.value = passCopy;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
 
-        const textarea = document.createElement("textarea");
-        textarea.value = passCopy;
+  /** Muda o ícone do botão de copiar senha quando chamada.
+   * @function
+   * @returns {void}
+   */
+  function changeIcon() {
+    const iconCopyPass = document.getElementById("copy-pass-icon");
+    iconCopyPass.classList.remove("fa-regular", "fa-copy");
+    iconCopyPass.classList.add("fa-solid", "fa-check");
 
-        document.body.appendChild(textarea);
+    setTimeout(function () {
+      iconCopyPass.classList.remove("fa-solid", "fa-check");
+      iconCopyPass.classList.add("fa-regular", "fa-copy");
+    }, 3000);
+  }
 
-        textarea.select();
-        document.execCommand("copy");
+  /** Adiciona um event listener para o evento 'click' no botão de copiar senha.
+   * @type {HTMLButtonElement}
+   */
+  const btnCopyPass = document.getElementById("copy-pass-btn");
 
-        document.body.removeChild(textarea);
-    }
-
-    /* FUNÇÃO ------------------------------|
-     * Muda o ícone do botão de copiar senha
-     * quando chamada.
-     */
-    function changeIcon() {
-        const iconCopyPass = document.getElementById("copy-pass-icon");
-        iconCopyPass.classList.remove("fa-regular", "fa-copy");
-        iconCopyPass.classList.add("fa-solid", "fa-check");
-
-        setTimeout(function() {
-            iconCopyPass.classList.remove("fa-solid", "fa-check");
-            iconCopyPass.classList.add("fa-regular", "fa-copy");
-        }, 3000);
-    }
-
-    /* FUNCIONALIDADE ------------------------------|
-     * Adiciona um event listener para o evento 'click' no botão de copiar senha.
-     */
-    const btnCopyPass = document.getElementById("copy-pass-btn");
-    btnCopyPass.addEventListener("click", function() {
-        copyPassWord();
-        changeIcon();
-    });
+  /**
+   * @function
+   * @returns {void}
+   */
+  btnCopyPass.addEventListener("click", function () {
+    copyPassWord();
+    changeIcon();
+  });
 });
-/*END-DOMContentLoadedd*/
+//* /DOMContentLoadedd
 
-//? |--------------------------------------------------------------------------------------------------------------------|
-
-/* FUNÇÃO ------------------------------|
+/**
  * Atualiza o valor do contador de caracteres da senha.
+ * @function
+ * @param {HTMLInputElement} passgenLengthInput - O elemento de entrada de senha que contém o valor.
+ * @param {number} valorPadrao - O valor padrão a ser utilizado se passgenLengthInput.value for falsy.
+ * @returns {void}
  */
 function updateLengthCounter(passgenLengthInput, valorPadrao) {
     let lengthCounter = document.getElementById('passgen-lengthcounter');
     lengthCounter.textContent = passgenLengthInput.value || valorPadrao;
 }
 
-//? |--------------------------------------------------------------------------------------------------------------------|
+//? |- ATALHO PARA GERAR SENHA ---------------------------------------------------------|
 
-/* FUNCIONALIDADE ------------------------------|
- * Adiciona um atalho para gerar senha (espaço).
+/**
+ * Adiciona um atalho para gerar senha (tecla de espaço).
+ * @function
+ * @param {KeyboardEvent} event - O evento de teclado associado à tecla pressionada.
+ * @returns {void}
  */
 document.addEventListener("keydown", function (event) {
     if (event.key === " ") {
@@ -92,10 +103,12 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-//? |--------------------------------------------------------------------------------------------------------------------|
+//? |- FUNCIONALIDADE DE GERAÇÃO DA SENHA ---------------------------------------------------------|
 
-/* FUNÇÃO ------------------------------|
+/**
  * Gera uma senha personalizada com base nas opções selecionadas pelo usuário.
+ * @function
+ * @returns {void}
  */
 function generatePass() {
     // Obtenção dos valores
@@ -107,7 +120,7 @@ function generatePass() {
     let includeSymbols = document.getElementById('passgen-symbols').checked;
     let passWord = '';
 
-    // Definição dos caracteres
+    // Definição dos chars
     let characters = "";
 
     if (includeUppercase) characters = auxIncludeUppercase(characters);
