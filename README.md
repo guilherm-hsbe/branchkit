@@ -6,7 +6,6 @@
 1. [Funcionalidades](#funcionalidades)
 1. [Licença](#licença)
 
-
 ## Visão Geral
 Plataforma de um conjunto diversificado de ferramentas e recursos relacionados à segurança, geração de códigos e outros elementos.
 
@@ -18,30 +17,11 @@ Principais dependências deste projeto:
 - [SVG Repo](https://www.svgrepo.com/): Fornece uma coleção variada de ícones usados na interface.
 - [Product & Project Managers Illustrations](https://www.drawkit.com/illustrations/product-project-managers-illustrations): Conjunto de SVGs gratuítos da [DrawKit](https://www.drawkit.com/) para determinados elementos do site.
 
-```bash
-# Clone o repositório
-git clone https://github.com/guilherm-hsbe/BranchKit
-
-# Acesse o diretório do projeto
-cd BranchKit
-```
-
 ## Funcionalidades
 As funcionalidades principais incluem: `[o projeto ainda não possui funcionalidades]`
 
-<!--
-- Funcionalidade A: breve descrição.
-- Funcionalidade B: breve descrição.
-- Funcionalidade C: breve descrição.
--->
-
 ## Licença
 Projeto licenciado sob a Licença MIT - consulte o arquivo [LICENSE](https://github.com/guilherm-hsbe/BranchKit/blob/main/LICENSE) para obter mais detalhes.
-
-<!--
-> Você é incentivado a colaborar e contribuir para o desenvolvimento deste projeto[...] <br>
-`Não é permitido [...]`
--->
 
 - E-mail: [guilherm3hsb@gmail.com](mailto:guilherm3hsb@gmail.com)
 - GitHub: [guilherm-hsbe](https://github.com/guilherm-hsbe)
