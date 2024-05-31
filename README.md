@@ -7,7 +7,7 @@
 1. [Licença](#licença)
 
 ## Visão Geral
-Plataforma de um conjunto diversificado de ferramentas e recursos relacionados à segurança, geração de códigos e outros elementos.
+Conjunto de ferramentas e recursos relacionados à segurança, geração de códigos e outros elementos.
 
 ## Dependências
 Principais dependências deste projeto:
